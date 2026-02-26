@@ -29,6 +29,11 @@ error_count=$(grep -i -c "error" "$logfile")
 warning_count=$(grep -i -c "warning" "$logfile")
 
 # Top 3 meaningful words
+top_words=$(tr '[:upper:]' '[:lower:]' < "$logfile" \
+  | grep -oE '[a-zA-Z]+' \
+  | grep -viE '^(info|error|warning|from|this|that|with|have|will|your|for|the|and|not|unknown|to)$' \
+  | sort | uniq -c | sort -rn | head -3 \
+ | awk '{print NE". "$2"-"$1}'  )
 
 
 # structured summary
@@ -51,6 +56,7 @@ WARNING Count    : $warning_count
 ----------------------------------------
 TOP 3 FREQUENT WORDS
 ----------------------------------------
+$top_words
 
 ----------------------------------------
 END OF REPORT 
