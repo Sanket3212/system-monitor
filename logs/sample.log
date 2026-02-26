@@ -1,0 +1,5 @@
+2026-02-18 09:12:01 INFO Application started successfully on port 8080
+2026-02-18 09:12:07 WARNING Connection pool size is nearing threshold
+2026-02-18 09:12:14 ERROR Failed to fetch user details from database
+2026-02-18 09:12:25 INFO Received request POST /api/login
+2026-02-18 09:12:27 ERROR Authentication failed for user: unknown
