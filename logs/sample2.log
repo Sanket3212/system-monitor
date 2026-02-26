@@ -1,0 +1,8 @@
+2026-02-26 10:00:01 INFO Application started successfully
+2026-02-26 10:01:15 WARNING Disk usage reaching threshold
+2026-02-26 10:02:33 ERROR Failed to connect to database
+2026-02-26 10:03:10 INFO Retrying database connection
+2026-02-26 10:03:45 INFO Database connection established
+2026-02-26 10:04:02 WARNING High memory usage detected
+2026-02-26 10:05:20 ERROR Timeout while processing request
+2026-02-26 10:06:11 INFO User login successful
