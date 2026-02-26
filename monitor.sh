@@ -33,7 +33,7 @@ top_words=$(tr '[:upper:]' '[:lower:]' < "$logfile" \
   | grep -oE '[a-zA-Z]+' \
   | grep -viE '^(info|error|warning|from|this|that|with|have|will|your|for|the|and|not|unknown|to)$' \
   | sort | uniq -c | sort -rn | head -3 \
- | awk '{print NE". "$2"-"$1}'  )
+ | awk '{print NR". "$2"-"$1}'  )
 
 
 # structured summary
